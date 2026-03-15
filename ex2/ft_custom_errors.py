@@ -16,11 +16,13 @@ def raise_plant_error() -> None:
     except PlantError as e:
         print(f"Caught PlantError: {e}\n")
 
+
 def raise_water_error() -> None:
     try:
         raise WaterError("Not enough water in the tank!")
     except WaterError as e:
         print(f"Caught WaterError: {e}\n")
+
 
 def all_error() -> None:
     print("Testing catching all garden errors...")

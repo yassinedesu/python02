@@ -13,7 +13,8 @@ def water_plants(plant_list: list) -> None:
         print("Closing watering system (cleanup)")
     if success:
         print("Watering completed successfully!")
-    
+
+
 def test_watering_system() -> None:
     print("=== Garden Watering System ===\n")
     print("Testing normal watering...")
@@ -21,5 +22,6 @@ def test_watering_system() -> None:
     print("\nTesting with error...")
     water_plants(["tomato", None])
     print("\nCleanup always happens, even with errors!")
+
 
 test_watering_system()
